@@ -7,7 +7,7 @@ import About from '@/modules/about';
 
 const PAGE_TITLE = 'About';
 const PAGE_DESCRIPTION =
-  'A short story of me, not important but seem better than nothing.';
+  'Its written in 5 minutes, better than nothing tho.';
 
 const AboutPage: NextPage = () => {
   return (

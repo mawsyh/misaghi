@@ -11,6 +11,8 @@ import HeaderSidebar from './header/HeaderSidebar';
 import HeaderTop from './header/HeaderTop';
 import NowPlayingBar from '../elements/NowPlayingBar';
 import NowPlayingCard from '../elements/NowPlayingCard';
+import Copyright from './partials/Copyright';
+import Breakline from '../elements/Breakline';
 
 // import TopBar from '../elements/TopBar';
 
@@ -60,6 +62,8 @@ const Layout = ({ children }: LayoutProps) => {
             </main>
           </div>
         )}
+        <Breakline />
+        <Copyright />
       </div>
       {isShowChatButton && <ChatButton />}
       {isMobile ? <NowPlayingCard /> : <NowPlayingBar />}

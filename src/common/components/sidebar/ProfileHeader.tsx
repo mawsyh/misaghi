@@ -22,8 +22,8 @@ const ProfileHeader = ({ expandMenu, imageSize }: ProfileHeaderProps) => {
       <Image
         src='/images/misaghi.jpg'
         alt='Mohammad Misaghi'
-        width={expandMenu ? 80 : imageSize}
-        height={expandMenu ? 80 : imageSize}
+        width={100}
+        height={100}
         rounded='rounded-full'
         className='lg:hover:scale-105'
       />

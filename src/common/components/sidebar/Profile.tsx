@@ -8,7 +8,6 @@ import useIsMobile from '@/common/hooks/useIsMobile';
 import MobileMenu from './MobileMenu';
 import MobileMenuButton from './MobileMenuButton';
 import ProfileHeader from './ProfileHeader';
-import Status from '../elements/Status';
 import ThemeToggleButton from '../elements/ThemeToggleButton';
 
 interface ProfileProps {
@@ -55,12 +54,7 @@ const Profile = ({ isScrolled = false }: ProfileProps) => {
         <div className='flex items-start justify-between lg:flex-col lg:space-y-4 md:px-2'>
           <ProfileHeader expandMenu={expandMenu} imageSize={getImageSize()} />
 
-          {!isMobile && (
-            <div className='flex items-center w-full justify-between'>
-              <Status />
-              <ThemeToggleButton />
-            </div>
-          )}
+        
 
           {isMobile && (
             <div

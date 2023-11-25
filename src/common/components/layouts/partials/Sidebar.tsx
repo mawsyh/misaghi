@@ -1,11 +1,10 @@
 import { useEffect, useState } from 'react';
-
 import useIsMobile from '@/common/hooks/useIsMobile';
-
-import Copyright from './Copyright';
 import Breakline from '../../elements/Breakline';
 import Navigation from '../../sidebar/Navigation';
 import Profile from '../../sidebar/Profile';
+import Status from '../../elements/Status';
+import ThemeToggleButton from '../../elements/ThemeToggleButton';
 
 const Sidebar = () => {
   const isMobile = useIsMobile();
@@ -36,7 +35,12 @@ const Sidebar = () => {
           <Breakline />
           <Navigation />
           <Breakline />
-          <Copyright />
+          {!isMobile && (
+            <div className='flex items-center w-full justify-between'>
+              <Status />
+              <ThemeToggleButton />
+            </div>
+          )}
         </>
       )}
     </div>

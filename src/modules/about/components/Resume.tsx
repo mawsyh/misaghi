@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { LuDownload as DownloadIcon } from 'react-icons/lu';
 
 const Resume = () => {
-  const RESUME_URL = 'https://bit.ly/cv-aulianza';
+  const RESUME_URL = 'http://bit.ly/misaghi';
 
   return (
     <Link
