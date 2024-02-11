@@ -36,7 +36,7 @@ const Sidebar = () => {
           <Navigation />
           <Breakline />
           {!isMobile && (
-            <div className='flex items-center w-full justify-between'>
+            <div className='flex items-center w-full justify-between px-4'>
               <Status />
               <ThemeToggleButton />
             </div>

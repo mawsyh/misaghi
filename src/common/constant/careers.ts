@@ -2,6 +2,19 @@ import { CareerProps } from '../types/careers';
 
 export const CAREERS: CareerProps[] = [
   {
+    position: 'Senior Frontend Engineer',
+    company: 'FANAP',
+    logo: '/images/careers/fanap.png',
+    location: 'Tehran',
+    location_type: 'On-site',
+    type: 'Fulltime',
+    start_date: '2023-12',
+    end_date: null,
+    industry: 'Fintech',
+    link: 'https://fanap.ir',
+    down: 'Not launched yet',
+  },
+  {
     position: 'Lead Frontend Engineer',
     company: 'ChartBox.ir',
     logo: '/images/careers/chartbox.png',
@@ -9,7 +22,7 @@ export const CAREERS: CareerProps[] = [
     location_type: 'On-site',
     type: 'Fulltime',
     start_date: '2022-11',
-    end_date: null,
+    end_date: '2024-01',
     industry: 'Fintech',
     link: 'https://ChartBox.ir',
     down: 'Not launched yet',

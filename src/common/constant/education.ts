@@ -4,7 +4,8 @@ export const EDUCATION: EducationProps[] = [
   {
     school: 'Institut Teknologi Sepuluh Nopember',
     major: 'Master of Computer Science (AI & algorithms)',
-    logo: '/images/education/sbu.png',
+    logo: '/images/education/sbu-light.png',
+    logoDark: '/images/education/sbu.png',
     location: 'Tehran',
     degree: "Master's degree",
     start_year: 2023,
@@ -14,7 +15,8 @@ export const EDUCATION: EducationProps[] = [
   {
     school: 'KNToosi University',
     major: 'Electrical Engineering',
-    logo: '/images/education/kntu.png',
+    logo: '/images/education/kntu-light.png',
+    logoDark: '/images/education/kntu.png',
     location: 'Tehran',
     degree: "Bachelor's degree",
     start_year: 2017,
