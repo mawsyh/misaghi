@@ -12,7 +12,7 @@ const OverviewItem = ({ label, value, unit = '' }: OverviewItemProps) => (
     <span className='text-sm dark:text-neutral-400'>{label}</span>
     <div>
       <AnimateCounter
-        className='text-xl lg:text-2xl font-medium text-purple-600'
+        className='text-xl lg:text-2xl font-medium dark:text-purple-400 text-purple-600'
         total={value}
       />
       {unit && <span className='text-sm dark:text-neutral-400'> {unit}</span>}

@@ -79,9 +79,9 @@ const Calendar = ({ data }: CalendarProps) => {
               {week.contributionDays.map((contribution) => {
                 const backgroundColor =
                     contribution.contributionCount === 1
-                    ? 'bg-purple-200'
+                    ? 'bg-purple-300'
                     : contribution.contributionCount === 2
-                    ? 'bg-purple-400'
+                    ? 'bg-purple-500'
                     : contribution.contributionCount === 3 
                     ? 'bg-purple-600'
                     : contribution.contributionCount > 3 
@@ -126,7 +126,7 @@ const Calendar = ({ data }: CalendarProps) => {
           <span className='dark:text-neutral-400'>Less</span>
           <ul className='flex gap-1'>
             <motion.li className='h-[10px] w-[10px] rounded-sm bg-neutral-300 dark:bg-neutral-800' />
-            {["bg-purple-200", "bg-purple-400", "bg-purple-600", "bg-purple-700"].map((item, index) => (
+            {["bg-purple-300", "bg-purple-500", "bg-purple-600", "bg-purple-700"].map((item, index) => (
               <motion.li
                 key={item}
                 initial='initial'
