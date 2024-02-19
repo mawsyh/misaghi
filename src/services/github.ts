@@ -53,7 +53,6 @@ export const fetchGithubData = async (
   if (status > 400) {
     return { status, data: {} };
   }
-
   return { status, data: responseJson.data.user };
 };
 
