@@ -4,12 +4,6 @@ export default function Document() {
   return (
     <Html lang='en'>
       <Head>
-        <script
-          async
-          defer
-          src='https://analytics.aulianza.com/script.js'
-          data-website-id='5a78190a-bdad-48a4-901a-c7400be41ca6'
-        ></script>
         <link
           rel='apple-touch-icon'
           sizes='57x57'

@@ -6,7 +6,7 @@ import { BlogItemProps } from '@/common/types/blog';
 const BASE_URL = 'https://dev.to/api/';
 const BLOG_URL = `${BASE_URL}articles/`;
 const COMMENT_URL = `${BASE_URL}comments`;
-const USERNAME = 'aulianza';
+const USERNAME = 'mawsyh';
 
 const DEVTO_KEY = process.env.DEVTO_KEY as string;
 

@@ -7,12 +7,12 @@ import Contact from '@/modules/contact';
 
 const PAGE_TITLE = 'Contact';
 const PAGE_DESCRIPTION =
-  "Feel free to get in touch and let's have a discussion about how we can work together.";
+  "Don't hesitate to reach out! I'd love to chat with you and explore the possibilities of working together.";
 
 const ContactPage: NextPage = () => {
   return (
     <>
-      <NextSeo title={`${PAGE_TITLE} - Ryan Aulia`} />
+      <NextSeo title={`${PAGE_TITLE} - Mohammad Misaghi`} />
       <Container data-aos='fade-up'>
         <PageHeading title={PAGE_TITLE} description={PAGE_DESCRIPTION} />
         <Contact />

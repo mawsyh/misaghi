@@ -1,18 +1,18 @@
 const Copyright = () => {
   return (
-    <div className='flex items-center gap-1 text-sm py-1 px-3 text-neutral-600 dark:text-neutral-600 font-sora'>
+    <div className='flex text-end items-center gap-1 text-sm py-1 px-3 text-neutral-600 dark:text-neutral-600 font-sora pb-4'>
       <span>©</span>
       <span>{new Date().getFullYear()}</span>
       <span>with</span>
-      <span className='text-red-500 animate-pulse'>❤</span>
+      <span className='text-purple-600 animate-pulse'>❤</span>
       <span>by</span>
       <a
-        href='http://github.com/aulianza/aulianza.id'
+        href='http://github.com/mawsyh'
         target='_blank'
         rel='noopener noreferrer'
       >
         <span className='hover:dark:text-neutral-400 cursor-pointer'>
-          aulianza
+          mawsyh
         </span>
       </a>
     </div>

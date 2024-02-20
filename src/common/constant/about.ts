@@ -1,14 +1,14 @@
 const currentYear = new Date().getFullYear();
-const workStart = 2019;
-const codingStart = 2014;
+const workStart = 2021;
+const codingStart = 2020;
 
 export const ABOUT = `
 <p>
-	Hi!, I'm Ryan, also known as aulianza, an experienced software engineer, specializing in frontend development, with ${
+	Hi!, I'm Mohammad, also known as mawsyh, an experienced software engineer, specializing in frontend development, with ${
     currentYear - workStart
   } years of professional experience and a total of ${
   currentYear - codingStart
-} years in web development since ${codingStart}. Skilled in JavaScript, TypeScript, and PHP, with proficiency in various web frameworks.
+} years in web development since ${codingStart}. Skilled in JavaScript, TypeScript, with proficiency in various web frameworks.
 </p>
 <p>
 	Throughout my career, I have demonstrated a strong ability to

@@ -25,7 +25,7 @@ const BlogDetailPage: NextPage<BlogDetailPageProps> = ({ blog }) => {
   const blogData = blog?.data || {};
 
   const slug = `blog/${blogData?.slug}?id=${blogData?.id}`;
-  const canonicalUrl = `https://aulianza.id/${slug}`;
+  const canonicalUrl = `https://misaghi.sth/${slug}`;
   const description = formatExcerpt(blogData?.excerpt?.rendered);
 
   const incrementViews = async () => {
@@ -42,7 +42,7 @@ const BlogDetailPage: NextPage<BlogDetailPageProps> = ({ blog }) => {
   return (
     <>
       <NextSeo
-        title={`${blogData?.title?.rendered} - Blog Ryan Aulia`}
+        title={`${blogData?.title?.rendered} - Blog Mohammad Misaghi`}
         description={description}
         canonical={canonicalUrl}
         openGraph={{
@@ -50,7 +50,7 @@ const BlogDetailPage: NextPage<BlogDetailPageProps> = ({ blog }) => {
           article: {
             publishedTime: blogData?.date,
             modifiedTime: blogData?.date,
-            authors: ['Ryan Aulia', 'aulianza'],
+            authors: ['Mohammad Misaghi'],
           },
           url: canonicalUrl,
           images: [
@@ -58,7 +58,7 @@ const BlogDetailPage: NextPage<BlogDetailPageProps> = ({ blog }) => {
               url: blogData?.featured_image_url,
             },
           ],
-          siteName: 'aulianza blog',
+          siteName: 'Misaghi blog',
         }}
       />
       <Container data-aos='fade-up'>

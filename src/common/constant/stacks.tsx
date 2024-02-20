@@ -1,8 +1,9 @@
 import { BsFillBootstrapFill, BsRobot } from 'react-icons/bs';
 import {
-  SiAngular,
   SiApollographql,
   SiCss3,
+  SiD3Dotjs,
+  SiDocker,
   SiExpress,
   SiFirebase,
   SiGatsby,
@@ -11,26 +12,27 @@ import {
   SiJest,
   SiJquery,
   SiLaravel,
+  SiLinux,
   SiMui,
   SiNextdotjs,
   SiNginx,
   SiNodedotjs,
   SiNuxtdotjs,
-  SiPhp,
-  SiPrisma,
   SiPwa,
   SiReact,
   SiRedux,
   SiRemix,
+  SiSass,
   SiSocketdotio,
   SiStorybook,
   SiStyledcomponents,
+  SiSvelte,
   SiTailwindcss,
+  SiThreedotjs,
   SiTypescript,
   SiVite,
   SiVuedotjs,
   SiWebpack,
-  SiWordpress,
 } from 'react-icons/si';
 
 export type stacksProps = {
@@ -40,7 +42,7 @@ export type stacksProps = {
 const iconSize = 24;
 
 export const STACKS: stacksProps = {
-  PHP: <SiPhp size={iconSize} className='text-blue-500' />,
+  Svelte: <SiSvelte size={iconSize} className='text-red-500' />,
   JavaScript: <SiJavascript size={iconSize} className='text-yellow-400' />,
   TypeScript: <SiTypescript size={iconSize} className='text-blue-400' />,
   'Next.js': <SiNextdotjs size={iconSize} />,
@@ -51,16 +53,16 @@ export const STACKS: stacksProps = {
   ),
   GraphQL: <SiGraphql size={iconSize} className='text-pink-600' />,
   Apollo: <SiApollographql size={iconSize} />,
-  WordPress: <SiWordpress size={iconSize} />,
+  Linux: <SiLinux size={iconSize} />,
   Laravel: <SiLaravel size={iconSize} className='text-red-500' />,
   'Material UI': <SiMui size={iconSize} className='text-sky-400' />,
   Vite: <SiVite size={iconSize} className='text-purple-500' />,
-  Prisma: <SiPrisma size={iconSize} className='text-emerald-500' />,
+  'D3.js': <SiD3Dotjs size={iconSize} className='text-orange-500' />,
   Firebase: <SiFirebase size={iconSize} className='text-yellow-500' />,
   'Artificial Intelligence': (
     <BsRobot size={iconSize} className='text-rose-500' />
   ),
-  Angular: <SiAngular size={iconSize} className='text-red-500' />,
+  Docker: <SiDocker size={iconSize} className='text-blue-500' />,
   'Vue.js': <SiVuedotjs size={iconSize} className='text-green-500' />,
   'Nuxt.js': <SiNuxtdotjs size={iconSize} className='text-green-400' />,
   'Node.js': <SiNodedotjs size={iconSize} className='text-green-600' />,
@@ -75,8 +77,10 @@ export const STACKS: stacksProps = {
   Jest: <SiJest size={iconSize} className='text-red-600' />,
   Storybook: <SiStorybook size={iconSize} className='text-amber-500' />,
   CSS: <SiCss3 size={iconSize} className='text-blue-300' />,
+  SASS: <SiSass size={iconSize} className='text-red-500' />,
   Socket: <SiSocketdotio size={iconSize} />,
   Remix: <SiRemix size={iconSize} />,
   Express: <SiExpress size={iconSize} />,
   Jquery: <SiJquery size={iconSize} />,
+  'Three.js': <SiThreedotjs size={iconSize} />,
 };
