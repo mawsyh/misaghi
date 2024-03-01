@@ -6,7 +6,7 @@ import { BiCommand as CommandIcon } from 'react-icons/bi';
 import { FiMenu as MenuIcon } from 'react-icons/fi';
 import {
   MdClose as CloseIcon,
-  MdVerified as VerifiedIcon,
+  MdVerifiedUser as VerifiedIcon,
 } from 'react-icons/md';
 
 import { MENU_ITEMS } from '@/common/constant/menu';
@@ -16,6 +16,7 @@ import Image from '../../elements/Image';
 import ThemeToggleButton from '../../elements/ThemeToggleButton';
 import Tooltip from '../../elements/Tooltip';
 import Profile from '../../sidebar/Profile';
+import { AnimatedTooltip } from '../../elements/animatedTooltip';
 
 const HeaderTop = () => {
   const { setIsOpen } = useContext(CommandPaletteContext);
@@ -26,6 +27,21 @@ const HeaderTop = () => {
   const menus = MENU_ITEMS.filter(
     (item) => item.isShow && item.title !== 'Home'
   );
+
+  const people = [
+    {
+      id: 1,
+      name: "John Doe",
+      designation: "Software Engineer",
+      image: "/images/misaghi.jpg",
+    },
+    {
+      id: 2,
+      name: "Robert Johnson",
+      designation: "Product Manager",
+      image: "/images/misaghi.jpg",
+    },
+  ];
 
   return (
     <header>
@@ -76,6 +92,7 @@ const HeaderTop = () => {
               ))}
             </div>
           )}
+        <AnimatedTooltip items={people} />
 
           {!showMenu && (
             <>

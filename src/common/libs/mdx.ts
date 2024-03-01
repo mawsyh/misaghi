@@ -3,8 +3,8 @@ import matter from 'gray-matter';
 import path from 'path';
 import { remark } from 'remark';
 import remarkGfm from 'remark-gfm';
-import remarkMdx from 'remark-mdx';
 import remarkParse from 'remark-parse';
+import remarkMdx from 'remark-mdx';
 
 interface MdxFileProps {
   slug: string;
@@ -26,6 +26,8 @@ export const loadMdxFiles = (slug: string): MdxFileProps[] => {
     const source = fs.readFileSync(filePath, 'utf-8');
     const { content, data } = matter(source);
 
+    /* eslint-disable @typescript-eslint/ban-ts-comment */
+    // @ts-ignore
     const mdxCompiler = remark().use(remarkParse).use(remarkGfm).use(remarkMdx);
     const mdxContent = mdxCompiler.processSync(content).toString();
 

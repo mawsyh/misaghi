@@ -19,3 +19,8 @@ export const soraSans = Sora({
   display: 'fallback',
   weight: ['300', '400', '500', '600', '700', '800'],
 });
+
+
+console.log("=====================================")
+console.log("Sora", soraSans)
+console.log("=====================================")
