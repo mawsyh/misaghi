@@ -16,7 +16,6 @@ import Image from '../../elements/Image';
 import ThemeToggleButton from '../../elements/ThemeToggleButton';
 import Tooltip from '../../elements/Tooltip';
 import Profile from '../../sidebar/Profile';
-import { AnimatedTooltip } from '../../elements/animatedTooltip';
 
 const HeaderTop = () => {
   const { setIsOpen } = useContext(CommandPaletteContext);
@@ -92,7 +91,6 @@ const HeaderTop = () => {
               ))}
             </div>
           )}
-        <AnimatedTooltip items={people} />
 
           {!showMenu && (
             <>
