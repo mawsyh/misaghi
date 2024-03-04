@@ -1,9 +1,9 @@
 import Breakline from '@/common/components/elements/Breakline';
 import { GITHUB_ACCOUNTS } from '@/common/constant/github';
 
-import BlogPreview from './BlogPreview';
-import Introduction from './Introduction';
+// import BlogPreview from './BlogPreview';
 import Contributions from './Contributions';
+import Introduction from './Introduction';
 
 
 const Home = () => {

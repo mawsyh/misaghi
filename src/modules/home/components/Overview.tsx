@@ -31,14 +31,12 @@ const Overview = ({ data }: OverviewProps) => {
     .flat();
 
   const bestContribution = Math.max(...totalContributionList) || 0;
-  const averageContribution = totalContributions / totalContributionList.length;
 
   return (
-    <div className='grid grid-cols-2 gap-3 py-2 sm:grid-cols-4'>
+    <div className='grid grid-cols-1 gap-3 py-2 sm:grid-cols-3'>
       <OverviewItem label='Total' value={totalContributions} />
       <OverviewItem label='This Week' value={totalThisWeekContribution} />
       <OverviewItem label='Best Day' value={bestContribution} />
-      <OverviewItem label='Average' value={averageContribution} unit='/ day' />
     </div>
   );
 };
