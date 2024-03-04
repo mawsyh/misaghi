@@ -64,15 +64,15 @@ export const SparklesCore = (props: ParticlesProps) => {
               },
             },
             fullScreen: {
-              enable: false,
+              enable: true,
               zIndex: 1,
             },
 
-            fpsLimit: 120,
+            fpsLimit: 60,
             interactivity: {
               events: {
                 onClick: {
-                  enable: true,
+                  enable: false,
                   mode: "push",
                 },
                 onHover: {
