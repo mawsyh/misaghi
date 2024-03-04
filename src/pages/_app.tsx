@@ -16,7 +16,6 @@ import { CommandPaletteProvider } from '@/common/context/CommandPaletteContext';
 import { firaCode, jakartaSans, soraSans } from '@/common/styles/fonts';
 
 import defaultSEOConfig from '../../next-seo.config';
-import { SparklesCore } from '@/common/components/elements/Sparkles';
 
 const ProgressBar = dynamic(
   () => import('src/common/components/elements/ProgressBar'),
@@ -52,17 +51,6 @@ const App = ({ Component, pageProps: { session, ...pageProps } }: AppProps) => {
               <Component {...pageProps} />
             </Layout>
           </CommandPaletteProvider>
-            <div className='w-full absolute inset-0 h-screen z-[-1]'>
-              <SparklesCore
-                id='particles'
-                background='transparent'
-                minSize={0.4}
-                maxSize={1.2}
-                particleDensity={10}
-                className='w-full h-full'
-                particleColor='#FFFFFF'
-              />
-          </div>
         </ThemeProvider>
       </SessionProvider>
     </>
