@@ -17,6 +17,7 @@ const LearnCard = ({
   image,
   is_new,
   level,
+  is_medium,
 }: ContentProps) => {
   const { data } = useSWR(`/api/learn?slug=${slug}`, fetcher);
 
@@ -40,7 +41,7 @@ const LearnCard = ({
             className='rounded-t-xl h-48 object-cover object-left'
           />
           <div className='flex gap-1 absolute top-0 left-0 w-full h-full bg-black opacity-0 transition-opacity duration-300 flex justify-center items-center text-white group-hover:opacity-80 rounded-t-xl text-sm font-medium'>
-            <span>View Lessons</span>
+            <span>{is_medium ? 'Read more on medium' : 'View Lessons'}</span>
             <ViewIcon size={20} />
           </div>
         </div>

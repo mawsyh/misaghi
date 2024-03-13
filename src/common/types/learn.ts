@@ -11,7 +11,7 @@ export interface ContentProps {
   image: string;
   is_new: boolean;
   level: 'Beginner' | 'Intermediate' | 'Advanced' | 'All Levels';
-  is_show: boolean;
+  is_medium: boolean;
 }
 
 export interface SubContentProps {

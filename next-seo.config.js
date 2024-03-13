@@ -3,12 +3,12 @@ const metaImage = '';
 const metaDescription = 'Creating stuff';
 
 const defaultSEOConfig = {
-  defaultTitle: 'Mohammad Misaghi personal website',
+  defaultTitle: 'Mohammad Misaqi personal website',
   description: metaDescription,
   canonical: canonicalUrl,
   openGraph: {
     canonical: canonicalUrl,
-    title: 'Mohammad Misaghi personal website',
+    title: 'Mohammad Misaqi personal website',
     description: metaDescription,
     type: 'website',
     images: [

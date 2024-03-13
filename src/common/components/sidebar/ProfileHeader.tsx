@@ -19,7 +19,7 @@ const ProfileHeader = ({ expandMenu, imageSize }: ProfileHeaderProps) => {
     >
       <Image
         src='/images/misaghi.jpg'
-        alt='Mohammad Misaghi'
+        alt='Mohammad Misaqi'
         width={100}
         height={100}
         rounded='rounded-full'
@@ -28,10 +28,9 @@ const ProfileHeader = ({ expandMenu, imageSize }: ProfileHeaderProps) => {
       <div className='flex gap-2 items-center mt-1 lg:mt-4'>
         <Link href='/' passHref>
           <h2 className='flex-grow text-lg lg:text-xl font-sora font-medium'>
-            Mohammad Misaghi
+            Mohammad Misaqi
           </h2>
         </Link>
-
       </div>
       <div className='hidden lg:flex text-sm font-sora text-neutral-600 hover:text-neutral-700 dark:text-neutral-500 dark:hover:text-neutral-400 transition-all duration-300'>
         @mawsyh

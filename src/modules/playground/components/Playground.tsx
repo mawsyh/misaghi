@@ -5,6 +5,7 @@ import ModalWrapper from '@/common/components/elements/ModalWrapper';
 
 import CodePlayground from './CodePlayground';
 import PlaygroundHeader from './PlaygroundHeader';
+import BackButton from '@/common/components/elements/BackButton';
 
 interface PlaygroundProps {
   id?: string | undefined;
@@ -51,8 +52,8 @@ const Playground = ({
 
   return (
     <>
+      <BackButton url='/' />
       {isHeading && <PlaygroundHeader />}
-
       <CodePlayground
         id={id}
         onFullScreen={handleFullScreen}
