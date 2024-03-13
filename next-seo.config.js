@@ -1,4 +1,4 @@
-const canonicalUrl = 'https://misaghi.sth';
+const canonicalUrl = 'https://misaqi.com';
 const metaImage = '';
 const metaDescription = 'Creating stuff';
 
@@ -14,24 +14,24 @@ const defaultSEOConfig = {
     images: [
       {
         url: metaImage,
-        alt: 'misaghi.sth og-image',
+        alt: 'misaqi.com og-image',
         width: 800,
         height: 600,
       },
       {
         url: metaImage,
-        alt: 'misaghi.sth og-image',
+        alt: 'misaqi.com og-image',
         width: 1200,
         height: 630,
       },
       {
         url: metaImage,
-        alt: 'misaghi.sth og-image',
+        alt: 'misaqi.com og-image',
         width: 1600,
         height: 900,
       },
     ],
-    site_name: 'misaghi.sth',
+    site_name: 'misaqi.com',
   },
   twitter: {
     handle: '@handle',

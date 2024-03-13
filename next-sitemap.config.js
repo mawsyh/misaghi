@@ -1,4 +1,4 @@
 module.exports = {
-  siteUrl: process.env.SITE_URL || 'https://misaghi.sth',
+  siteUrl: process.env.SITE_URL || 'https://misaqi.com',
   generateRobotsTxt: true,
 };

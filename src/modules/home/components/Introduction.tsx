@@ -5,7 +5,7 @@ const Introduction = () => {
     <section className='bg-cover bg-no-repeat '>
       <div className='space-y-3'>
         <div className='flex gap-2 text-2xl lg:text-3xl font-medium font-sora'>
-          <h1 className='font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50'>
+          <h1 className='font-bold text-center bg-clip-text text-transparent bg-gradient-to-b dark:from-neutral-100 dark:to-neutral-400 from-neutral-900 to-neutral-500 bg-opacity-50'>
             Mohammad Misaghi
           </h1>
         </div>

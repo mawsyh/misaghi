@@ -11,10 +11,7 @@ import {
 import { HiOutlineChat as AiIcon } from 'react-icons/hi';
 import { useDebounce } from 'usehooks-ts';
 
-import {
-  MENU_ITEMS,
-  SOCIAL_MEDIA,
-} from '@/common/constant/menu';
+import { MENU_ITEMS, SOCIAL_MEDIA } from '@/common/constant/menu';
 import { CommandPaletteContext } from '@/common/context/CommandPaletteContext';
 import useIsMobile from '@/common/hooks/useIsMobile';
 import { MenuItemProps } from '@/common/types/menu';
@@ -121,7 +118,7 @@ const CommandPalette = () => {
 
   const handleFindGoogle = () => {
     const url =
-      'https://www.google.com/search?q=' + queryDebounce + '&ref=misaghi.sth';
+      'https://www.google.com/search?q=' + queryDebounce + '&ref=misaqi.com';
     window.open(url, '_blank');
   };
 

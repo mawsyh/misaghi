@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://misaghi.sth
+Host: https://misaqi.com
 
 # Sitemaps
-Sitemap: https://misaghi.sth/sitemap.xml
+Sitemap: https://misaqi.com/sitemap.xml
