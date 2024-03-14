@@ -5,7 +5,7 @@ import useSWR from 'swr';
 import NavigationSection from '@/common/components/elements/NavigationSection';
 import { parseUrl } from '@/common/helpers';
 import { SubContentMetaProps } from '@/common/types/learn';
-import GiscusComment from '@/modules/blog/components/GiscusComment';
+// import GiscusComment from '@/modules/blog/components/GiscusComment';
 import { fetcher } from '@/services/fetcher';
 
 import ContentBody from './ContentBody';
@@ -100,7 +100,7 @@ const ContentDetail = ({ content, frontMatter }: ContentDetailProps) => {
           id='comments'
           className='border-t dark:border-neutral-700 border-gray-300 my-10'
         >
-          <GiscusComment />
+          {/* <GiscusComment /> */}
         </section>
       )}
     </>
