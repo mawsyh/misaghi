@@ -1,5 +1,4 @@
 import { differenceInMonths, differenceInYears, format } from 'date-fns';
-import { BsBuildings as CompanyIcon } from 'react-icons/bs';
 
 import Card from '@/common/components/elements/Card';
 import Image from '@/common/components/elements/Image';
@@ -28,25 +27,31 @@ const CareerCard = ({
 
   return (
     <Card className='flex items-center gap-5 py-4 px-6 border border-neutral-300 dark:border-neutral-900'>
-      <Image className='rounded-full' src={logo} width={55} height={55} alt={company} />
+      <Image
+        className='rounded-full'
+        src={logo}
+        width={55}
+        height={55}
+        alt={company}
+      />
       <div className='space-y-1 w-full'>
         <h6>{position}</h6>
         <div className='text-sm text-neutral-600 dark:text-neutral-400 space-y-2 flex justify-between'>
           <div className='flex flex-col'>
-          <div className='flex items-center gap-1 md:gap-2'>
-            <a
-              href={link || '#'}
-              target='_blank'
-              data-umami-event={`Click Career Company Name: ${company}`}
-            >
-              <span className='underline cursor-pointer hover:text-dark hover:dark:text-white'>
-                {company}
-              </span>
-            </a>
-            <span className='text-neutral-300 dark:text-neutral-700'>•</span>
-            <span>{location}</span>
-          </div>
-          <span className='text-neutral-500 dark:text-neutral-500'>
+            <div className='flex items-center gap-1 md:gap-2'>
+              <a
+                href={link || '#'}
+                target='_blank'
+                data-umami-event={`Click Career Company Name: ${company}`}
+              >
+                <span className='underline cursor-pointer hover:text-dark hover:dark:text-white'>
+                  {company}
+                </span>
+              </a>
+              <span className='text-neutral-300 dark:text-neutral-700'>•</span>
+              <span>{location}</span>
+            </div>
+            <span className='text-neutral-500 dark:text-neutral-500'>
               ~ {durationText}
             </span>
           </div>

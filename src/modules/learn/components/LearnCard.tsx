@@ -1,16 +1,14 @@
-import Link from 'next/link';
+import { Suspense } from 'react';
 import { AiFillFire as NewIcon } from 'react-icons/ai';
 import { BiLabel as LevelIcon } from 'react-icons/bi';
 import { HiOutlineArrowSmRight as ViewIcon } from 'react-icons/hi';
+import { MdDateRange } from 'react-icons/md';
+import Skeleton from 'react-loading-skeleton';
 
 import Card from '@/common/components/elements/Card';
 import Image from '@/common/components/elements/Image';
-import { ContentProps } from '@/common/types/learn';
-import { fetcher } from '@/services/fetcher';
-import Skeleton from 'react-loading-skeleton';
 import SkeletonLoader from '@/common/components/elements/SkeletonLoader';
-import { MdDateRange } from 'react-icons/md';
-import { Suspense } from 'react';
+import { ContentProps } from '@/common/types/learn';
 
 const LearnCard = ({
   title,

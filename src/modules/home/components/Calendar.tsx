@@ -78,14 +78,15 @@ const Calendar = ({ data }: CalendarProps) => {
             <div key={week.firstDay}>
               {week.contributionDays.map((contribution) => {
                 const backgroundColor =
-                    contribution.contributionCount === 1
+                  contribution.contributionCount === 1
                     ? 'bg-purple-300'
                     : contribution.contributionCount === 2
                     ? 'bg-purple-500'
-                    : contribution.contributionCount === 3 
+                    : contribution.contributionCount === 3
                     ? 'bg-purple-600'
-                    : contribution.contributionCount > 3 
-                    ? 'bg-purple-700' : null;
+                    : contribution.contributionCount > 3
+                    ? 'bg-purple-700'
+                    : null;
 
                 const getRandomDelayAnimate =
                   Math.random() * week.contributionDays.length * 0.15;
@@ -103,7 +104,11 @@ const Calendar = ({ data }: CalendarProps) => {
                         transition: { delay: getRandomDelayAnimate },
                       },
                     }}
-                    className={`${backgroundColor ? backgroundColor : 'bg-neutral-300 dark:bg-neutral-800'} my-[2px] block h-[12px] w-[12px] rounded-sm`}
+                    className={`${
+                      backgroundColor
+                        ? backgroundColor
+                        : 'bg-neutral-300 dark:bg-neutral-800'
+                    } my-[2px] block h-[12px] w-[12px] rounded-sm`}
                     onMouseEnter={() =>
                       setSelectContribution({
                         count: contribution.contributionCount,
@@ -126,7 +131,12 @@ const Calendar = ({ data }: CalendarProps) => {
           <span className='dark:text-neutral-400'>Less</span>
           <ul className='flex gap-1'>
             <motion.li className='h-[10px] w-[10px] rounded-sm bg-neutral-300 dark:bg-neutral-800' />
-            {["bg-purple-300", "bg-purple-500", "bg-purple-600", "bg-purple-700"].map((item, index) => (
+            {[
+              'bg-purple-300',
+              'bg-purple-500',
+              'bg-purple-600',
+              'bg-purple-700',
+            ].map((item, index) => (
               <motion.li
                 key={item}
                 initial='initial'

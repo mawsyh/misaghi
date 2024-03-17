@@ -1,5 +1,6 @@
 import { ReactNode, useEffect, useState } from 'react';
 import { BiCodeAlt as SkillsIcon } from 'react-icons/bi';
+
 import InfiniteLoopSlider from '@/common/components/elements/InfiniteLoopSlider';
 import SectionHeading from '@/common/components/elements/SectionHeading';
 import SectionSubHeading from '@/common/components/elements/SectionSubHeading';

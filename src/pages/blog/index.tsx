@@ -1,11 +1,11 @@
 import { NextPage } from 'next';
 import { NextSeo } from 'next-seo';
 
+import BackButton from '@/common/components/elements/BackButton';
 import Container from '@/common/components/elements/Container';
 import PageHeading from '@/common/components/elements/PageHeading';
 import { LEARN_CONTENTS } from '@/common/constant/medium';
 import LearnModule from '@/modules/learn';
-import BackButton from '@/common/components/elements/BackButton';
 
 const PAGE_TITLE = 'Blog';
 const PAGE_DESCRIPTION =
@@ -16,7 +16,7 @@ const LearnPage: NextPage = () => {
     <>
       <NextSeo title={`${PAGE_TITLE} - Ryan Misaqi`} />
       <Container data-aos='fade-up'>
-      <BackButton url='/' />
+        <BackButton url='/' />
         <PageHeading title={PAGE_TITLE} description={PAGE_DESCRIPTION} />
         <LearnModule contents={LEARN_CONTENTS} />
       </Container>
