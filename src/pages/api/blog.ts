@@ -26,7 +26,6 @@ export default async function handler(
     const blogItemsWithViews = await Promise.all(
       responseData?.data?.posts?.map(async (blogItem: BlogItemProps) => {
         const { slug } = blogItem;
-        console.log("prisma", prisma)
         const contentMeta = await prisma.contentMeta.findUnique({
           where: { slug: slug as string },
           select: { views: true },
