@@ -1,11 +1,11 @@
 /* eslint-disable no-console */
 import { useState } from 'react';
 
+import BackButton from '@/common/components/elements/BackButton';
 import ModalWrapper from '@/common/components/elements/ModalWrapper';
 
 import CodePlayground from './CodePlayground';
 import PlaygroundHeader from './PlaygroundHeader';
-import BackButton from '@/common/components/elements/BackButton';
 
 interface PlaygroundProps {
   id?: string | undefined;

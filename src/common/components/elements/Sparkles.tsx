@@ -1,12 +1,13 @@
 'use client';
-import React from 'react';
-import { useEffect, useState } from 'react';
-import Particles, { initParticlesEngine } from '@tsparticles/react';
 import type { Container, SingleOrMultiple } from '@tsparticles/engine';
+import Particles, { initParticlesEngine } from '@tsparticles/react';
 import { loadSlim } from '@tsparticles/slim';
 import { motion, useAnimation } from 'framer-motion';
-import clsxm from '@/common/libs/clsxm';
 import { useTheme } from 'next-themes';
+import React from 'react';
+import { useEffect, useState } from 'react';
+
+import clsxm from '@/common/libs/clsxm';
 
 type ParticlesProps = {
   id?: string;

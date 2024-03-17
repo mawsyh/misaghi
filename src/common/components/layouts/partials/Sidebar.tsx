@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react';
+
 import useIsMobile from '@/common/hooks/useIsMobile';
+
 import Breakline from '../../elements/Breakline';
-import Navigation from '../../sidebar/Navigation';
-import Profile from '../../sidebar/Profile';
 import Status from '../../elements/Status';
 import ThemeToggleButton from '../../elements/ThemeToggleButton';
+import Navigation from '../../sidebar/Navigation';
+import Profile from '../../sidebar/Profile';
 
 const Sidebar = () => {
   const isMobile = useIsMobile();

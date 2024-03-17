@@ -3,11 +3,11 @@ import { useRouter } from 'next/router';
 import { useTheme } from 'next-themes';
 import { ReactNode } from 'react';
 import { useWindowSize } from 'usehooks-ts';
+
 import useHasMounted from '@/common/hooks/useHasMounted';
+
 import HeaderSidebar from './header/HeaderSidebar';
 import HeaderTop from './header/HeaderTop';
-import NowPlayingBar from '../elements/NowPlayingBar';
-import NowPlayingCard from '../elements/NowPlayingCard';
 import Copyright from './partials/Copyright';
 import Breakline from '../elements/Breakline';
 // import NewsBar from '../elements/NewsBar';

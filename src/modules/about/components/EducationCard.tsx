@@ -1,9 +1,9 @@
+import { useTheme } from 'next-themes';
 import { BsBuildings as CompanyIcon } from 'react-icons/bs';
 
 import Card from '@/common/components/elements/Card';
 import Image from '@/common/components/elements/Image';
 import { EducationProps } from '@/common/types/education';
-import { useTheme } from 'next-themes';
 
 const EducationCard = ({
   school,
@@ -16,11 +16,16 @@ const EducationCard = ({
   link,
 }: EducationProps) => {
   const { resolvedTheme } = useTheme();
-  
+
   return (
     <Card className='flex items-center gap-5 py-4 px-6 border border-neutral-300 dark:border-neutral-900'>
       {logo ? (
-        <Image src={resolvedTheme === 'dark' ? logoDark : logo} width={55} height={55} alt={school} />
+        <Image
+          src={resolvedTheme === 'dark' ? logoDark : logo}
+          width={55}
+          height={55}
+          alt={school}
+        />
       ) : (
         <CompanyIcon size={50} />
       )}

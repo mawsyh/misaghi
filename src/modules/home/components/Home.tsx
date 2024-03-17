@@ -5,7 +5,6 @@ import { GITHUB_ACCOUNTS } from '@/common/constant/github';
 import Contributions from './Contributions';
 import Introduction from './Introduction';
 
-
 const Home = () => {
   return (
     <>

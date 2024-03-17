@@ -48,7 +48,7 @@ const HeaderTop = () => {
         <div className='flex items-center gap-5'>
           <Image
             src='/images/misaghi.jpg'
-            alt='Mohammad Misaqi'
+            alt='Ryan Misaqi'
             width={40}
             height={40}
             rounded='rounded-full'
@@ -58,7 +58,7 @@ const HeaderTop = () => {
             <div className='flex items-center gap-3'>
               <Link href='/' passHref>
                 <h2 className='flex-grow text-lg lg:text-xl font-sora font-medium'>
-                  Mohammad Misaqi
+                  Ryan Misaqi
                 </h2>
               </Link>
               <Tooltip title='Verified'>

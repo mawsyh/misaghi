@@ -6,12 +6,11 @@ import {
   BsLinkedin as LinkedinIcon,
 } from 'react-icons/bs';
 import {
-  FiPieChart as AnalyticsIcon,
   FiPocket as HomeIcon,
   FiRss as BlogIcon,
   FiUser as ProfileIcon,
 } from 'react-icons/fi';
-import { PiChatCircleDotsBold as ChatIcon, PiMediumLogo } from 'react-icons/pi';
+import { PiMediumLogo } from 'react-icons/pi';
 import { SiJavascript } from 'react-icons/si';
 
 import { MenuItemProps } from '../types/menu';
@@ -95,7 +94,8 @@ export const SOCIAL_MEDIA: MenuItemProps[] = [
     isShow: true,
     isExternal: true,
     eventName: 'Social: Medium',
-    className: '!bg-gray-100 !text-gray-800 border border dark:border-neutral-700', 
+    className:
+      '!bg-gray-100 !text-gray-800 border border dark:border-neutral-700',
     type: 'Link',
   },
   {
@@ -119,5 +119,3 @@ export const SOCIAL_MEDIA: MenuItemProps[] = [
     type: 'Link',
   },
 ];
-
-

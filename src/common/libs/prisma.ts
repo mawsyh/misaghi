@@ -17,27 +17,27 @@ if (process.env.NODE_ENV === 'production') {
 async function main() {
   const newProject = await prisma.projects.create({
     data: {
-      title: "My Project",
-      slug: "my-project",
-      description: "This is my project",
-      image: "my-project.jpg",
-      stacks: "Node, Express, Prisma",
+      title: 'My Project',
+      slug: 'my-project',
+      description: 'This is my project',
+      image: 'my-project.jpg',
+      stacks: 'Node, Express, Prisma',
       is_show: true,
       updated_at: new Date(),
-      content: "This is the content of my project",
+      content: 'This is the content of my project',
       is_featured: false,
     },
-  })
+  });
 
-  console.log("Created new project: ", newProject)
+  console.log('Created new project: ', newProject);
 }
 
 main()
-  .catch(e => {
-    throw e
+  .catch((e) => {
+    throw e;
   })
   .finally(async () => {
-    await prisma.$disconnect()
-  })
+    await prisma.$disconnect();
+  });
 
 export default prisma;

@@ -1,7 +1,6 @@
-"use client";
-import { useEffect } from "react";
-import { motion, stagger, useAnimate } from "framer-motion";
-
+'use client';
+import { motion, stagger, useAnimate } from 'framer-motion';
+import { useEffect } from 'react';
 
 export const TextGenerateEffect = ({
   words,
@@ -11,10 +10,10 @@ export const TextGenerateEffect = ({
   className?: string;
 }) => {
   const [scope, animate] = useAnimate();
-  const wordsArray = words.split(" ");
+  const wordsArray = words.split(' ');
   useEffect(() => {
     animate(
-      "span",
+      'span',
       {
         opacity: 1,
       },
@@ -32,9 +31,9 @@ export const TextGenerateEffect = ({
           return (
             <motion.span
               key={word + idx}
-              className="dark:text-white text-black opacity-0"
+              className='dark:text-white text-black opacity-0'
             >
-              {word}{" "}
+              {word}{' '}
             </motion.span>
           );
         })}
@@ -44,8 +43,8 @@ export const TextGenerateEffect = ({
 
   return (
     <div className={className}>
-      <div className="mt-4">
-        <div className=" dark:text-white text-black leading-snug tracking-wide">
+      <div className='mt-4'>
+        <div className=' dark:text-white text-black leading-snug tracking-wide'>
           {renderWords()}
         </div>
       </div>

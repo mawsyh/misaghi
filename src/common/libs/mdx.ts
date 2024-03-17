@@ -3,8 +3,8 @@ import matter from 'gray-matter';
 import path from 'path';
 import { remark } from 'remark';
 import remarkGfm from 'remark-gfm';
-import remarkParse from 'remark-parse';
 import remarkMdx from 'remark-mdx';
+import remarkParse from 'remark-parse';
 
 interface MdxFileProps {
   slug: string;

@@ -54,8 +54,6 @@ const Profile = ({ isScrolled = false }: ProfileProps) => {
         <div className='flex items-start justify-between lg:flex-col lg:space-y-4 md:px-2'>
           <ProfileHeader expandMenu={expandMenu} imageSize={getImageSize()} />
 
-        
-
           {isMobile && (
             <div
               className={clsx(

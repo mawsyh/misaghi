@@ -4,7 +4,7 @@ export const CAREERS: CareerProps[] = [
   {
     position: 'Senior Frontend Engineer',
     company: 'FANAP',
-    logo: '/images/careers/fanap.png',
+    logo: '/images/careers/fanap.webp',
     location: 'Tehran',
     location_type: 'On-site',
     type: 'Fulltime',

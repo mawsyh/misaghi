@@ -12,6 +12,7 @@ export interface ContentProps {
   is_new: boolean;
   level: 'Beginner' | 'Intermediate' | 'Advanced' | 'All Levels';
   is_medium: boolean;
+  date: string;
 }
 
 export interface SubContentProps {

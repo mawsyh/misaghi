@@ -4,7 +4,7 @@ const codingStart = 2020;
 
 export const ABOUT = `
 <p>
-	Hi!, I'm Mohammad, also known as mawsyh, an experienced software engineer, specializing in frontend development, with ${
+	Hi!, I'm Ryan, also known as mawsyh, an experienced software engineer, specializing in frontend development, with ${
     currentYear - workStart
   } years of professional experience and a total of ${
   currentYear - codingStart
