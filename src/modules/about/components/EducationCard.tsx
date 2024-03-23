@@ -18,7 +18,7 @@ const EducationCard = ({
   const { resolvedTheme } = useTheme();
 
   return (
-    <Card className='flex items-center gap-5 py-4 px-6 border border-neutral-300 dark:border-neutral-900'>
+    <Card className='flex items-center gap-5 py-4 px-4 sm:px-6 border border-neutral-300 dark:border-neutral-900'>
       {logo ? (
         <Image
           src={resolvedTheme === 'dark' ? logoDark : logo}

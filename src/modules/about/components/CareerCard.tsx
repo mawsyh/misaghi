@@ -26,9 +26,9 @@ const CareerCard = ({
   }
 
   return (
-    <Card className='flex items-center gap-5 py-4 px-6 border border-neutral-300 dark:border-neutral-900'>
+    <Card className='flex items-center gap-5 py-4 px-4 sm:px-6 border border-neutral-300 dark:border-neutral-900'>
       <Image
-        className='rounded-full'
+        className='rounded-full min-w-[40px]'
         src={logo}
         width={55}
         height={55}
@@ -36,9 +36,9 @@ const CareerCard = ({
       />
       <div className='space-y-1 w-full'>
         <h6>{position}</h6>
-        <div className='text-sm text-neutral-600 dark:text-neutral-400 space-y-2 flex justify-between'>
-          <div className='flex flex-col'>
-            <div className='flex items-center gap-1 md:gap-2'>
+        <div className='text-xs sm:text-sm text-end sm:text-auto text-neutral-600 dark:text-neutral-400 space-y-2 flex flex-col sm:flex-row gap-1 justify-between'>
+          <div className='flex flex-col text-start'>
+            <div className='flex flex-col'>
               <a
                 href={link || '#'}
                 target='_blank'
@@ -48,19 +48,20 @@ const CareerCard = ({
                   {company}
                 </span>
               </a>
-              <span className='text-neutral-300 dark:text-neutral-700'>•</span>
-              <span>{location}</span>
+              <div className='flex gap-2 items-center'>
+                <span className='text-neutral-300 dark:text-neutral-700'>
+                  •
+                </span>
+                <span className='text-neutral-500 dark:text-neutral-500'>{location}</span>
+              </div>
             </div>
-            <span className='text-neutral-500 dark:text-neutral-500'>
-              ~ {durationText}
-            </span>
           </div>
           <div className='flex flex-col md:text-[13px]'>
             <div className='flex gap-1'>
               <span>{format(startDate, 'MMM yyyy')}</span> -{' '}
               <span>{end_date ? format(endDate, 'MMM yyyy') : 'Present'}</span>
             </div>
-            <span className='text-neutral-500 dark:text-neutral-500'>
+            <span className='text-start sm:text-end text-neutral-500 dark:text-neutral-500'>
               ~ {durationText}
             </span>
           </div>

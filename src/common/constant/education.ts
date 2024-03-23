@@ -3,7 +3,7 @@ import { EducationProps } from '../types/education';
 export const EDUCATION: EducationProps[] = [
   {
     school: 'Institut Teknologi Sepuluh Nopember',
-    major: 'Master of Computer Science (AI & algorithms)',
+    major: 'Computer Science (AI & algorithms)',
     logo: '/images/education/sbu-light.png',
     logoDark: '/images/education/sbu.png',
     location: 'Tehran',
