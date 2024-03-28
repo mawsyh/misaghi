@@ -17,14 +17,16 @@ const ProfileHeader = ({ expandMenu, imageSize }: ProfileHeaderProps) => {
         expandMenu && 'flex-col !items-start'
       )}
     >
-      <Image
-        src='/images/misaghi.jpg'
-        alt='Ryan Misaqi'
-        width={100}
-        height={100}
-        rounded='rounded-full'
-        className='lg:hover:scale-105'
-      />
+      <Link href='/'>
+        <Image
+          src='/images/misaghi.jpg'
+          alt='Ryan Misaqi'
+          width={100}
+          height={100}
+          rounded='rounded-full'
+          className='lg:hover:scale-105'
+        />
+      </Link>
       <div className='flex gap-2 items-center mt-1 lg:mt-4'>
         <Link href='/' passHref>
           <h2 className='flex-grow text-lg lg:text-xl font-sora font-medium'>

@@ -4,12 +4,11 @@ import { NextSeo } from 'next-seo';
 import BackButton from '@/common/components/elements/BackButton';
 import Container from '@/common/components/elements/Container';
 import PageHeading from '@/common/components/elements/PageHeading';
-import { LEARN_CONTENTS } from '@/common/constant/medium';
-import LearnModule from '@/modules/learn';
+import { PROJECTS } from '@/common/constant/projectlist';
+import CardModule from '@/modules/learn';
 
-const PAGE_TITLE = 'Blog';
-const PAGE_DESCRIPTION =
-  "Learn JavaScript, React, Node.js, and more. I'm sharing my knowledge and experience in web development.";
+const PAGE_TITLE = 'Projects';
+const PAGE_DESCRIPTION = 'Feel free to check out my projects and experiments.';
 
 const LearnPage: NextPage = () => {
   return (
@@ -18,7 +17,7 @@ const LearnPage: NextPage = () => {
       <Container data-aos='fade-up'>
         <BackButton url='/' />
         <PageHeading title={PAGE_TITLE} description={PAGE_DESCRIPTION} />
-        <LearnModule contents={LEARN_CONTENTS} />
+        <CardModule type="project" contents={PROJECTS} />
       </Container>
     </>
   );

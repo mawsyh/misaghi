@@ -6,8 +6,9 @@ import {
   BsLinkedin as LinkedinIcon,
 } from 'react-icons/bs';
 import {
+  FiBookOpen as BlogIcon,
+  FiLayout as ProjectIcon,
   FiPocket as HomeIcon,
-  FiRss as BlogIcon,
   FiUser as ProfileIcon,
 } from 'react-icons/fi';
 import { PiMediumLogo } from 'react-icons/pi';
@@ -34,6 +35,15 @@ export const MENU_ITEMS: MenuItemProps[] = [
     isShow: true,
     isExternal: false,
     eventName: 'Pages: Blog',
+    type: 'Pages',
+  },
+  {
+    title: 'Projects',
+    href: '/projects',
+    icon: <ProjectIcon size={iconSize} />,
+    isShow: true,
+    isExternal: false,
+    eventName: 'Pages: Projects',
     type: 'Pages',
   },
   {

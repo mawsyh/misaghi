@@ -56,8 +56,6 @@ const Calendar = ({ data }: CalendarProps) => {
       };
     }) ?? [];
 
-  const contributionColors = data?.colors ?? [];
-
   return (
     <>
       <div className='relative flex flex-col'>

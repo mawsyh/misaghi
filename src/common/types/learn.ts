@@ -3,6 +3,15 @@ export interface ContentLanguage {
   title: string;
 }
 
+
+export interface ProjectProps {
+  id: string;
+  title: string;
+  description: string;
+  image: string;
+  is_new: boolean;
+}
+
 export interface ContentProps {
   id: number;
   title: string;

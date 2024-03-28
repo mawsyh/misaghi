@@ -46,14 +46,16 @@ const HeaderTop = () => {
     <header>
       <div className='hidden lg:flex gap-5 items-center justify-between py-8 mx-8'>
         <div className='flex items-center gap-5'>
-          <Image
-            src='/images/misaghi.jpg'
-            alt='Ryan Misaqi'
-            width={40}
-            height={40}
-            rounded='rounded-full'
-            className='lg:hover:scale-105'
-          />
+          <Link href='/'>
+            <Image
+              src='/images/misaghi.jpg'
+              alt='Ryan Misaqi'
+              width={40}
+              height={40}
+              rounded='rounded-full'
+              className='lg:hover:scale-105'
+            />
+          </Link>
           {!showMenu && (
             <div className='flex items-center gap-3'>
               <Link href='/' passHref>

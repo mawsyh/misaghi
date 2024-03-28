@@ -36,8 +36,8 @@ const CareerCard = ({
       />
       <div className='space-y-1 w-full'>
         <h6>{position}</h6>
-        <div className='text-xs sm:text-sm text-end sm:text-auto text-neutral-600 dark:text-neutral-400 space-y-2 flex flex-col sm:flex-row gap-1 justify-between'>
-          <div className='flex flex-col text-start'>
+        <div className='text-xs sm:text-sm text-end sm:text-auto text-neutral-600 dark:text-neutral-400 space-y-2 flex flex-col sm:items-center sm:flex-row gap-1 justify-between'>
+          <div className='flex flex-col text-start sm:text-center'>
             <div className='flex flex-col'>
               <a
                 href={link || '#'}
