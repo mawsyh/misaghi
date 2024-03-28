@@ -7,6 +7,7 @@ import SectionSubHeading from '@/common/components/elements/SectionSubHeading';
 import { fetcher } from '@/services/fetcher';
 
 import Calendar from './Calendar';
+import ContributionsLoading from './ContributionsLoading';
 import Overview from './Overview';
 
 type ContributionsProps = {
@@ -16,7 +17,7 @@ type ContributionsProps = {
 };
 
 const Contributions = ({ username, endpoint }: ContributionsProps) => {
-  const { data } = useSWR(endpoint, fetcher);
+  const { data, isLoading } = useSWR(endpoint, fetcher);
 
   const contributionCalendar =
     data?.contributionsCollection?.contributionCalendar;
@@ -41,9 +42,11 @@ const Contributions = ({ username, endpoint }: ContributionsProps) => {
         </Link>
       </SectionSubHeading>
 
-      {!data && <div className='dark:text-neutral-400'>No Data</div>}
-
-      {data && (
+      {isLoading ? (
+        <ContributionsLoading />
+      ) : !data ? (
+        <div className='dark:text-neutral-400'>No Data</div>
+      ) : (
         <div className='space-y-3'>
           <Overview data={contributionCalendar} />
           <Calendar data={contributionCalendar} />
