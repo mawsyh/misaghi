@@ -1,14 +1,16 @@
 import { motion } from 'framer-motion';
 
-import { ContentProps } from '@/common/types/learn';
+import { ContentProps, ProjectProps } from '@/common/types/learn';
 
-import LearnCard from './components/LearnCard';
+import LearnCard from './components/cards/LearnCard';
+import ProjectCard from './components/cards/ProjectCard';
 
 interface LearnModuleProps {
-  contents: ContentProps[];
+  type: 'blog' | 'project';
+  contents: ContentProps[] | ProjectProps[];
 }
 
-const LearnModule = ({ contents }: LearnModuleProps) => {
+const CardModule = ({ type, contents }: LearnModuleProps) => {
   return (
     <div className='grid grid-cols-1 sm:grid-cols-2 gap-5 pt-2'>
       {contents?.map((content, index) => (
@@ -18,11 +20,15 @@ const LearnModule = ({ contents }: LearnModuleProps) => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.3, delay: index * 0.1 }}
         >
-          <LearnCard {...content} />
+          {type === 'blog' ? (
+            <LearnCard {...content as ContentProps} />
+          ) : (
+            <ProjectCard {...content as ProjectProps} />
+          )}
         </motion.div>
       ))}
     </div>
   );
 };
 
-export default LearnModule;
+export default CardModule;
