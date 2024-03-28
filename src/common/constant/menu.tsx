@@ -78,7 +78,7 @@ export const MENU_ITEMS: MenuItemProps[] = [
 export const SOCIAL_MEDIA: MenuItemProps[] = [
   {
     title: 'Email',
-    href: 'mailto:moh.mir36@gmail.com',
+    href: 'mailto:contact@misaqi.com',
     icon: <EmailIcon size={iconSize} />,
     isShow: true,
     isExternal: true,
